@@ -8,8 +8,8 @@ class Pokemon extends React.Component {
                 
                     <img src={pokemon.url} alt={pokemon.name} />
                     <h1 className="pokemon__title">{pokemon.name}</h1>
-                    <ul>{pokemon.types.map((type,index) =>
-                         <li key={index}>{type}</li>)}</ul>
+                    <ul className="types">{pokemon.types.map((type,index) =>
+                         <li key={index} className="badge badge-secondary">{type}</li>)}</ul>
                
             </li>
         );
