@@ -33,9 +33,11 @@
 }
 
 .pokemon__container{
-  border :1px solid gray;
+  border :2px solid gray;
   display : flex;
   flex-direction: column;
+  border-radius: 5px;
+  background-color: #c9ebf5; 
 }
 ul{
   list-style:none;
@@ -45,5 +47,11 @@ ul{
 .cards__container{
   display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px;
-  
+  grid-gap :10px;
+}
+.pokemon__title{
+  border-top:2px solid gray ;
+  border-bottom: 2px solid gray;
+
+
 }
