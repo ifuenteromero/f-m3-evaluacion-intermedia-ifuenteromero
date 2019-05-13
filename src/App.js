@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Pokelist from './components/Pokelist'
 
@@ -19,8 +18,7 @@ const pokemon = [
 class App extends React.Component{
   render(){
     return(
-      <ul>
-      {/* {pokemon.map(pok=> <li><div> <img src={pok.url}/><h1>{pok.name}</h1><ul>{pok.types.map(p=><li>{p}</li>)}</ul></div></li>)} */}
+      <ul className="cards__container">
       <Pokelist list ={pokemon}/>
       </ul>
     );
